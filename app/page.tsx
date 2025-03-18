@@ -80,7 +80,7 @@ export default function Home() {
           className="text-center mb-16"
         >
           <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            This is my home page
+            This is my home pages
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Welcome to our platform. We create amazing experiences through innovative solutions 
