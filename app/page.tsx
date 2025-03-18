@@ -1,6 +1,7 @@
+
 "use client"; // Mark this component as a Client Component
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,6 +11,15 @@ export default function Home() {
   const [chatOpen, setChatOpen] = useState(false);
   const [userInput, setUserInput] = useState(""); // State to store user input
   const [messages, setMessages] = useState<{ text: string; isUser: boolean }[]>([]); // State to store chat messages
+
+  // Effect to apply dark mode to the body element
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
 
   // Function to handle user input and generate a response
   const handleSendMessage = () => {
