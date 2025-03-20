@@ -14,7 +14,7 @@ export default function About() {
         initial={{ y: -20, opacity: 0 }} 
         animate={{ y: 0, opacity: 1 }} 
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-6 text-center"
+        className="text-4xl font-bold tracking-tight text-amber-500 sm:text-5xl mb-6 text-center"
       >
         About Us
       </motion.h1>
@@ -23,7 +23,7 @@ export default function About() {
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 1.2, delay: 0.2 }}
-        className="text-lg text-gray-700 leading-relaxed text-center"
+        className="text-lg text-white leading-relaxed text-center"
       >
         Welcome to our about page. Learn more about us and our mission.
       </motion.p>
@@ -33,7 +33,7 @@ export default function About() {
           initial={{ x: -30, opacity: 0 }} 
           animate={{ x: 0, opacity: 1 }} 
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="text-2xl font-semibold text-gray-900 mb-4"
+          className="text-2xl font-semibold text-white mb-4"
         >
           Our Story
         </motion.h2>
@@ -41,7 +41,7 @@ export default function About() {
           initial={{ opacity: 0 }} 
           animate={{ opacity: 1 }} 
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-gray-700 leading-relaxed"
+          className="text-white leading-relaxed"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
           Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl.
@@ -49,7 +49,7 @@ export default function About() {
       </section>
       
       <section className="mt-12">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Team</h2>
+        <h2 className="text-2xl font-semibold text-white mb-4">Our Team</h2>
         <motion.div 
           initial={{ opacity: 0, y: 30 }} 
           animate={{ opacity: 1, y: 0 }} 
@@ -80,8 +80,8 @@ export default function About() {
       </section>
       
       <section className="mt-12">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">Contact Us</h2>
-        <p className="text-gray-700 leading-relaxed mb-6">
+        <h2 className="text-2xl font-semibold text-white mb-4">Contact Us</h2>
+        <p className="text-white leading-relaxed mb-6">
           Feel free to reach out to us with any questions or inquiries.
         </p>
         
