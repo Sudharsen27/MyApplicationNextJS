@@ -82,7 +82,7 @@ export default function Home() {
           <h1 className="text-5xl font-bold text-amber-500 dark:text-white mb-6">
             This is my home pages
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white dark:text-gray-300 max-w-3xl mx-auto">
             Welcome to our platform. We create amazing experiences through innovative solutions 
             and thoughtful design.
           </p>
@@ -98,7 +98,7 @@ export default function Home() {
 
         {/* Features Section */}
         <div className="mb-20">
-          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white text-center mb-12">
+          <h2 className="text-3xl font-semibold text-white dark:text-white text-center mb-12">
             Key Features
           </h2>
           <Swiper
@@ -171,16 +171,16 @@ export default function Home() {
         <footer className="mt-20 pt-8 border-t border-gray-200 dark:border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">My Website</h3>
+              <h3 className="text-xl font-bold text-white dark:text-white">My Website</h3>
             </div>
             <div className="flex space-x-6">
-              <a href="/About" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">About</a>
-              <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Features</a>
-              <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Blogs</a>
-              <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Contact</a>
+              <a href="/About" className="text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">About</a>
+              <a href="/Features" className="text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Features</a>
+              <a href="#" className="text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Blogs</a>
+              <a href="#" className="text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Contact</a>
             </div>
           </div>
-          <div className="mt-8 text-center text-gray-500 dark:text-gray-400 text-sm">
+          <div className="mt-8 text-center text-white dark:text-gray-400 text-sm">
             © {new Date().getFullYear()} My Website. All rights reserved.
           </div>
         </footer>
@@ -194,7 +194,7 @@ export default function Home() {
         </button>
         {chatOpen && (
           <div className="fixed bottom-20 right-4 w-80 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
-            <div className="text-gray-900 dark:text-white font-medium mb-4">
+            <div className="text-white dark:text-white font-medium mb-4">
               Chat with us
             </div>
 

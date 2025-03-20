@@ -29,3 +29,19 @@ body {
   --font-geist-sans: 'Geist', sans-serif;
   --font-geist-mono: 'Geist Mono', monospace;
 }
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.hover\:rotate-3d:hover {
+  transform: perspective(1000px) rotateY(5deg) rotateX(3deg);
+}
+
+.perspective {
+  perspective: 1000px;
+}
