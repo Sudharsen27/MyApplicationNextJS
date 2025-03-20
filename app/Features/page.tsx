@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from 'next/image';
 
 export default function FeatureComponent() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -110,12 +111,17 @@ staggerElements.forEach((el, index) => {
           data-aos-delay="200"
         >
           <div className="overflow-hidden rounded-lg">
-            {/* <img 
-              src="/Images/20jan4.jpg" 
-              alt="Feature One Illustration" 
-              className="max-w-xs mx-auto transform hover:scale-110 transition-transform duration-700 ease-in-out" 
-            /> */}
-          </div>
+  <Image 
+    src="/Images/20jan4.jpg" 
+    alt="Feature Three Illustration" 
+    width={300} // Adjust width as needed
+    height={200} // Adjust height as needed
+    className="max-w-xs mx-auto transition-all duration-700 ease-in-out"
+    style={{ transition: 'all 700ms ease-in-out' }}
+    onMouseOver={(e) => e.currentTarget.style.filter = 'saturate(1.5) brightness(1.1)'}
+    onMouseOut={(e) => e.currentTarget.style.filter = 'none'}
+  />
+</div>
           <div className="w-24 h-1 bg-amber-300 mt-4 mx-auto transform origin-left transition-all duration-500 group-hover:w-full"></div>
         </div>
         <div 
@@ -155,18 +161,18 @@ staggerElements.forEach((el, index) => {
           data-aos="fade-left"
           data-aos-delay="200"
         >
-          <div className="overflow-hidden rounded-lg perspective">
-          <img 
-  src="/Images/bottle.jpg" 
-  alt="Feature Three Illustration" 
-  className="max-w-xs mx-auto transition-all duration-700 ease-in-out" 
-  style={{ 
-    transition: 'all 700ms ease-in-out' 
-  }}
-  onMouseOver={(e) => e.currentTarget.style.filter = 'saturate(1.5) brightness(1.1)'}
-  onMouseOut={(e) => e.currentTarget.style.filter = 'none'}
-/>
-          </div>
+        <div className="overflow-hidden rounded-lg">
+  <Image 
+    src="/Images/bottle.jpg" 
+    alt="Feature Three Illustration" 
+    width={300} // Adjust width as needed
+    height={200} // Adjust height as needed
+    className="max-w-xs mx-auto transition-all duration-700 ease-in-out"
+    style={{ transition: 'all 700ms ease-in-out' }}
+    onMouseOver={(e) => e.currentTarget.style.filter = 'saturate(1.5) brightness(1.1)'}
+    onMouseOut={(e) => e.currentTarget.style.filter = 'none'}
+  />
+</div>
           <div className="w-24 h-1 bg-amber-300 mt-4 mx-auto transform origin-left transition-all duration-500 group-hover:w-full"></div>
         </div>
         <div 
@@ -209,21 +215,21 @@ staggerElements.forEach((el, index) => {
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <div className="overflow-hidden rounded-lg">
-          <img 
-  src="/Images/chair.jpg" 
-  alt="Feature Three Illustration" 
-  className="max-w-xs mx-auto transition-all duration-700 ease-in-out" 
-  style={{ 
-    transition: 'all 700ms ease-in-out' 
-  }}
-  onMouseOver={(e) => e.currentTarget.style.filter = 'saturate(1.5) brightness(1.1)'}
-  onMouseOut={(e) => e.currentTarget.style.filter = 'none'}
-/>
-          </div>
+      <div className="overflow-hidden rounded-lg">
+  <Image 
+    src="/Images/chair.jpg" 
+    alt="Feature Three Illustration" 
+    width={300} // Adjust width as needed
+    height={200} // Adjust height as needed
+    className="max-w-xs mx-auto transition-all duration-700 ease-in-out"
+    style={{ transition: 'all 700ms ease-in-out' }}
+    onMouseOver={(e) => e.currentTarget.style.filter = 'saturate(1.5) brightness(1.1)'}
+    onMouseOut={(e) => e.currentTarget.style.filter = 'none'}
+  />
+</div>
           <div className="w-24 h-1 bg-amber-300 mt-4 mx-auto transform origin-left transition-all duration-500 group-hover:w-full"></div>
         </div>
-        {/* <div 
+        <div 
           className="md:w-1/2 p-4"
           data-aos="fade-left"
           data-aos-delay="300"
@@ -234,16 +240,17 @@ staggerElements.forEach((el, index) => {
           </h2>
           <br />
           <p className="text-gray-600 mb-4 transition-all duration-300 hover:text-gray-400">
-            On her way she met a copy. The copy warned the Little Blind Text, that where it 
-            came from it would have been rewritten a thousand times and everything that was left 
-            from its origin would be the word "and" and the Little Blind Text should turn around.
-          </p>
+  On her way she met a copy. The copy warned the Little Blind Text, that where it 
+  came from it would have been rewritten a thousand times and everything that was left 
+  from its origin would be the word &quot;and&quot; and the Little Blind Text should turn around.
+</p>
+
           <a href="#" className="text-blue-500 text-sm relative overflow-hidden group inline-flex items-center">
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">Learn More</span>
             <span className="ml-1 transform transition-transform duration-500 group-hover:translate-x-1">»</span>
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
           </a>
-        </div> */}
+        </div>
       </div>
     </div>
   );
