@@ -12,6 +12,7 @@ export default function About() {
     <br></br>
     <br></br>
     <br></br>
+
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -34,7 +35,7 @@ export default function About() {
         transition={{ duration: 1.2, delay: 0.2 }}
         className="text-lg text-white leading-relaxed text-center"
       >
-        Welcome to our about page. Learn more about us and our mission.
+        Welcome to our About page. Learn more about us and our mission.
       </motion.p>
 
       <section className="mt-12">
