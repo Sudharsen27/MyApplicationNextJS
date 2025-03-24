@@ -76,7 +76,7 @@ export default function Home() {
           <br></br>
           <br></br>
           <h1 className="text-5xl font-bold text-amber-500 dark:text-white mb-6">
-            This is my home pages
+            This is my home page
           </h1>
           <p className="text-xl text-white dark:text-gray-300 max-w-3xl mx-auto">
             Welcome to our platform. We create amazing experiences through innovative solutions 
