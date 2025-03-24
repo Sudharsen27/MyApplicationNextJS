@@ -1,25 +1,20 @@
 
 "use client"; // Mark this component as a Client Component
 
-import { useState, useEffect } from "react";
+import { useState,  } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Navbar from "./components/Navbar";
+
 import "swiper/css";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  
   const [chatOpen, setChatOpen] = useState(false);
   const [userInput, setUserInput] = useState(""); // State to store user input
   const [messages, setMessages] = useState<{ text: string; isUser: boolean }[]>([]); // State to store chat messages
 
-  // Effect to apply dark mode to the body element
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  }, [darkMode]);
+ 
 
   // Function to handle user input and generate a response
   const handleSendMessage = () => {
@@ -62,15 +57,12 @@ export default function Home() {
   };
 
   return (
-    <div className={`${darkMode ? "dark" : ""}`}>
+    
+    <div className={''}>
+      <Navbar />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 dark:bg-gray-900 dark:text-white">
         {/* Dark Mode Toggle */}
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="fixed top-4 right-4 p-2 bg-gray-200 dark:bg-gray-700 rounded-lg"
-        >
-          {darkMode ? "🌞" : "🌙"}
-        </button>
+        {/*  */}
 
         {/* Hero Section */}
         <motion.div
@@ -79,6 +71,10 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
           <h1 className="text-5xl font-bold text-amber-500 dark:text-white mb-6">
             This is my home pages
           </h1>
@@ -176,7 +172,7 @@ export default function Home() {
             <div className="flex space-x-6">
               <a href="/About" className="text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">About</a>
               <a href="/Features" className="text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Features</a>
-              <a href="#" className="text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Blogs</a>
+              <a href="/Blogs" className="text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Blogs</a>
               <a href="#" className="text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Contact</a>
             </div>
           </div>
