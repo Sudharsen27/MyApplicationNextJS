@@ -85,20 +85,21 @@ staggerElements.forEach((el, index) => {
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <span className="inline-block animate-pulse">P</span>
-          <span className="inline-block stagger-item hover:animate-bounce">R</span>
-          <span className="inline-block stagger-item hover:animate-bounce">O</span>
-          <span className="inline-block stagger-item hover:animate-bounce">D</span>
-          <span className="inline-block stagger-item hover:animate-bounce">U</span>
-          <span className="inline-block stagger-item hover:animate-bounce">C</span>
-          <span className="inline-block stagger-item hover:animate-bounce">T</span>
+          <span className="inline-block animate-pulse"></span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">F</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">E</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">A</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">T</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">U</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">R</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">E</span>
           <span className="inline-block mx-2"></span>
-          <span className="inline-block stagger-item hover:animate-bounce">B</span>
-          <span className="inline-block stagger-item hover:animate-bounce">L</span>
-          <span className="inline-block stagger-item hover:animate-bounce">O</span>
-          <span className="inline-block stagger-item hover:animate-bounce">C</span>
-          <span className="inline-block stagger-item hover:animate-bounce">K</span>
-          <span className="inline-block stagger-item hover:animate-bounce">S</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">B</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">L</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">O</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">C</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">K</span>
+          <span className="inline-block stagger-item hover:animate-bounce animate-pulse">S</span>
         </h1>
       </div>
 
