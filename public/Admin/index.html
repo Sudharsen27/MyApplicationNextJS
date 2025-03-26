@@ -4,11 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decap CMS</title>
-  <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
 </head>
 <body>
+  <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js" defer></script>
   <script>
-    CMS.init();
+    window.onload = function() {
+      if (typeof CMS !== "undefined") {
+        CMS.init();
+      } else {
+        console.error("Decap CMS failed to load.");
+      }
+    };
   </script>
 </body>
 </html>
+
