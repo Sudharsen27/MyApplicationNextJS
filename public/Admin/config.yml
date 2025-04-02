@@ -1,6 +1,25 @@
+# backend:
+#   name: git-gateway
+#   branch: main  # Change if using a different branch
+
+# media_folder: "public/images"
+# public_folder: "/images"
+
+# collections:
+#   - name: "blog"
+#     label: "Blog"
+#     folder: "content/blog"
+#     create: true
+#     slug: "{{slug}}"
+#     fields:
+#       - { label: "Title", name: "title", widget: "string" }
+#       - { label: "Date", name: "date", widget: "datetime" }
+#       - { label: "Body", name: "body", widget: "markdown" }
+
+
 backend:
   name: git-gateway
-  branch: main  # Change if using a different branch
+  branch: main  # Adjust if you're using a different branch
 
 media_folder: "public/images"
 public_folder: "/images"
