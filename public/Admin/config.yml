@@ -20,6 +20,8 @@
 backend:
   name: git-gateway
   branch: main  # Adjust if you're using a different branch
+  repo : MyApplicationNextJS
+  
 
 media_folder: "public/images"
 public_folder: "/images"
