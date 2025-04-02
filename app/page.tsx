@@ -5,6 +5,8 @@ import { useState,  } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Navbar from "./components/Navbar";
+import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 import "swiper/css";
 
@@ -164,7 +166,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-20 pt-8 border-t border-gray-200 dark:border-gray-700">
+        {/* <footer className="mt-20 pt-8 border-t border-gray-200 dark:border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <h3 className="text-xl font-bold text-white dark:text-white">My Website</h3>
@@ -179,7 +181,9 @@ export default function Home() {
           <div className="mt-8 text-center text-white dark:text-gray-400 text-sm">
             © {new Date().getFullYear()} My Website. All rights reserved.
           </div>
-        </footer>
+        </footer> */}
+        <br></br>
+       <Newsletter />
 
         {/* Chatbot */}
         <button
@@ -236,6 +240,7 @@ export default function Home() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 }
