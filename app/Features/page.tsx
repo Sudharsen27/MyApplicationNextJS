@@ -4,6 +4,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
+import Footer from '../components/Footer';
 
 export default function FeatureComponent() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -256,6 +257,9 @@ staggerElements.forEach((el, index) => {
           </a>
         </div>
       </div>
-    </div></>
+    </div>
+    <br></br>
+    <Footer/>
+    </>
   );
 }

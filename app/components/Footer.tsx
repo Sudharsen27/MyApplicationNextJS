@@ -48,8 +48,8 @@ export default function Footer() {
     social: [
       { name: 'Twitter', icon: 'X', url: 'https://twitter.com' },
       { name: 'Instagram', icon: 'IG', url: 'https://instagram.com' },
-      { name: 'LinkedIn', icon: 'IN', url: 'https://linkedin.com' },
-      { name: 'GitHub', icon: 'GH', url: 'https://github.com' }
+      { name: 'LinkedIn', icon: 'IN', url: 'https://www.linkedin.com/in/sundar-lingam-8407a5221/' },
+      { name: 'GitHub', icon: 'GH', url: 'https://github.com/Sudharsen27' }
     ]
   };
 
@@ -86,7 +86,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-r from-blue-900 to-purple-900 dark:from-gray-900 dark:to-black text-white">
+    <footer className="bg-gradient-to-r bg-black dark:from-gray-900 dark:to-black text-white">
       {/* Scroll To Top Button */}
       <motion.button
         initial={{ opacity: 0, scale: 0.5 }}
@@ -184,8 +184,11 @@ export default function Footer() {
                   >
                     <SocialIcon name={social.icon} />
                   </motion.a>
+                  
                 ))}
               </div>
+              
+              
             </motion.div>
           </div>
 

@@ -4,6 +4,7 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 // Define form data interface
 interface FormData {
@@ -90,7 +91,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black overflow-hidden relative">
+    <div className="">
       {/* Animated Background Layer */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black"
@@ -273,8 +274,15 @@ const Contact = () => {
             </div>
           </motion.div>
         </div>
+
+       
+        
       </motion.section>
+      <br></br>
+      <br></br>
+      <Footer />
     </div>
+  
   );
 };
 
