@@ -20,8 +20,7 @@
 backend:
   name: git-gateway
   branch: main  # Adjust if you're using a different branch
-  repo : MyApplicationNextJS
-  
+  repo : Sudharsen27/MyApplicationNextJS
 
 media_folder: "public/images"
 public_folder: "/images"
@@ -36,3 +35,4 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+
