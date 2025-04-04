@@ -43,7 +43,7 @@ export default function Footer() {
     legal: [
       { name: 'Privacy Policy', path: '/Privacy' },
       { name: 'Terms of Service', path: '/Terms' },
-      { name: 'Cookies', path: '/Cookies' }
+     
     ],
     social: [
       { name: 'Twitter', icon: 'X', url: 'https://twitter.com' },
@@ -302,7 +302,7 @@ export default function Footer() {
             >
               <Link href="/Privacy" className="hover:text-white transition-colors">Privacy</Link>
               <Link href="/Terms" className="hover:text-white transition-colors">Terms</Link>
-              <Link href="/Sitemap" className="hover:text-white transition-colors">Sitemap</Link>
+              <Link href="/" className="hover:text-white transition-colors">Sitemap</Link>
             </motion.div>
           </div>
         </div>
