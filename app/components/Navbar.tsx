@@ -168,7 +168,7 @@ export default function Navbar() {
                   className={`relative px-3 py-2 rounded-md text-sm lg:text-base font-medium group transition-all
                     ${isActive(item.path) ? 
                       'text-pink-600 dark:text-pink-400' : 
-                      'text-gray-700 hover:text-pink-600 dark:text-gray-200 dark:hover:text-pink-400'
+                      'text-white hover:text-pink-600 dark:text-gray-200 dark:hover:text-pink-400'
                     }`}
                 >
                   {item.name}
